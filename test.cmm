@@ -1,0 +1,16 @@
+int main(){
+	int a=3;//hahaha
+	float b=1.2;/*laji*/
+	float c=0x3;
+	float d=033;
+	float e=1.3e-3;
+	1<2||3;
+	while(i>0)
+	if(a<0)
+	else
+	printf
+	struct{
+	2=3/4;
+	}
+	return 0;
+}
