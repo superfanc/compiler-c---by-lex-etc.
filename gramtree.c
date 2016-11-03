@@ -70,15 +70,6 @@ void yyerror(char*s,...) //变长参数错误处理函数
     vfprintf(stderr,s,ap);
     fprintf(stderr,"\n");
 }
-int main(int argc,char ** argv)
-{
-    if(argc<=1) return 1;
-    FILE* f = fopen(argv[1],"r");
-    if(!f){
-        perror(argv[1]);
-        return 1;
-    }
-    yyrestart(f);
-    yyparse();//启动文法分析，调用词法分析
-    return 0;
+int main(){
+    return yyparse();
 }
